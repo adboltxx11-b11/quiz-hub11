@@ -58,14 +58,22 @@ set:async o=>{const{error}=await sb.from(T).upsert({collection:c,id:i,data:o,upd
 </script>
 <script>
 /* ===== EDIT HERE ===== */
-const QUIZZES=[{id:"titus-class-1",title:"Titus Class",qs:[
+const QUIZZES=[{id:"titus-class-1",title:"Titus Class",closed:true,qs:[
 {q:"في أي جزيرة ترك بولس الرسول تيطس لكي يرتب الأمور الناقصة؟",o:["قبرص","كريت","بطمس","صقلية"],a:1},
 {q:"ماذا طلب بولس الرسول من تيطس أن يقيم في كل مدينة حسب الإصحاح الأول؟",o:["أسواراً لحماية المدينة","شيوخاً (قسوساً) في كل مدينة","مدارس لتعليم القراءة","مستشفيات للمرضى"],a:1},
 {q:"بماذا وصف بولس الرسول أهل كريت استشهاداً بقول أحد أنبيائهم؟",o:["أذكياء وشجعان في الحرب","كذابين، وحوش رديئة، بطون بطالة","رحماء ويحبون الغرباء","مجتهدون في الزراعة والتجارة"],a:1},
 {q:"في الإصحاح الثاني، بماذا يوصي بولس الرسول \"الحدثان\" (الشباب) بصفة خاصة؟",o:["أن يكونوا متعقلين","أن يسافروا للتجارة","أن يتعلموا الفلسفة","أن يبنوا بيوتاً كبيرة"],a:0},
 {q:"ما الذي تُعلمنا إياه نعمة الله المخلصة التي ظهرت لجميع الناس؟",o:["أن نجمع الأموال ونبني الثروات","أن ننكر الفجور والشهوات العالمية ونعيش بالتعقل والبر والتقوى","أن نصبح حكاماً وقادة","أن نتوقف عن العمل ونكتفي بالصلاة"],a:1},
 {q:"كيف خلصنا الله بحسب رحمته في الإصحاح الثالث (وليس بأعمال بر عملناها نحن)؟",o:["بغسل الميلاد الثاني وتجديد الروح القدس","بتقديم القرابين والهدايا الكثيرة","بالصيام لمدة أربعين يوماً","بحفظ وصايا العهد القديم فقط"],a:0},
-{q:"ماذا يجب أن يفعل تيطس مع الإنسان المبتدع (المخالف) بعد إنذاره مرتين؟",o:["أن يجعله رئيساً للكهنة","أن يعطيه فرصة ثالثة ورابعة","أن يرفضه (يعتزله) لأنه فسد","أن ينفيه خارج البلاد"],a:2}]}];
+{q:"ماذا يجب أن يفعل تيطس مع الإنسان المبتدع (المخالف) بعد إنذاره مرتين؟",o:["أن يجعله رئيساً للكهنة","أن يعطيه فرصة ثالثة ورابعة","أن يرفضه (يعتزله) لأنه فسد","أن ينفيه خارج البلاد"],a:2}]},
+{id:"titus-1-9-16",title:"Titus 1 (9-16)",qs:[
+{q:"بحسب تيطس 1: 9، لماذا يجب أن يتمسّك الخادم أو الأسقف بكلام الله الصادق؟",o:["لكي يحفظ الآيات فقط دون أن يشرحها","لكي يقدر أن يشجّع الناس بالتعليم الصحيح، ويردّ على من يعاند الحق","لكي يصبح مشهوراً بين الناس","لكي يتجنّب الكلام مع أي شخص"],a:1},
+{q:"ما هي المشكلة التي كان يفعلها المعلمون الكذبة في البيوت بحسب تيطس 1: 10–11؟",o:["كانوا يساعدون الفقراء ويزورون المرضى","كانوا يعلّمون الأطفال حفظ المزامير","كانوا يخدعون الناس بكلام فارغ ويخرّبون بيوتاً كاملة من أجل المكسب المادي (الربح القبيح)","كانوا يبنون كنائس جديدة في كل مدينة"],a:2},
+{q:"كيف وصف أحد شعراء جزيرة كريت أهل بلده في تيطس 1: 12؟",o:["بأنهم أبطال شجعان ومحبّون للعمل","بأنهم «كذابون دائماً، وحوش ردية، بطون بطالة» (كسالى يحبون الأكل فقط)","بأنهم حكماء لا يخطئون أبداً","بأنهم يحبون مساعدة الغرباء"],a:1},
+{q:"لماذا طلب بولس من تيطس في تيطس 1: 13 أن يوبّخ المخطئين «بصرامة» (بحزم)؟",o:["لكي يطردهم من الكنيسة ولا يعودوا أبداً","لكي يخيفهم ويمنعهم من الكلام","لكي يرجعوا ويصبحوا أقوياء وأصحّاء في الإيمان","لكي يثبت أنه أقوى منهم"],a:2},
+{q:"ما الأشياء التي حذّرنا الكتاب المقدس في تيطس 1: 14 من أن نسمع لها أو نصدّقها؟",o:["نصائح الوالدين والخدام في الكنيسة","«خرافات يهودية» (قصص خيالية غير حقيقية) ووصايا أناس ابتعدوا عن الحق","قصص الأنبياء في العهد القديم","الترانيم الروحية والصلاة"],a:1},
+{q:"بحسب تيطس 1: 16، كيف يفضح الإنسان غير الأمين نفسه أمام الله والناس؟",o:["يقول إنه لا يعرف الله ولا يذهب للكنيسة","يقول بفمه إنه يعرف الله، لكن تصرفاته وأعماله السيئة تثبت العكس","يساعد أصدقاءه في السر دون أن يراه أحد","يعتذر عندما يخطئ ويحاول إصلاح خطئه"],a:1},
+{q:"بحسب تيطس 1: 15، ماذا قال بولس عن الأشياء بالنسبة للطاهرين وغير الطاهرين؟",o:["لا يوجد شيء طاهر على الإطلاق في هذا العالم","الأطعمة وحدها هي التي تنجّس الإنسان","كل شيء طاهر للطاهرين، أما للنجسين وغير المؤمنين فليس شيء طاهراً، لأن ذهنهم وضميرهم قد تنجّسا","الطهارة تأتي من لبس ملابس معينة فقط"],a:2}]}];
 /* ===================== */
 const $=s=>document.querySelector(s),app=$('#app');
 let me=null,em=null,db=null,delMode=false;
@@ -93,21 +101,24 @@ const id=hid(m),acc=await getAcc(id),ph=await H(p);
 if(up){if(acc)return E('Email already registered');await putAcc(id,{name:n,email:m,ph,pw:p});enter(n,m)}
 else{if(!acc||acc.ph!==ph)return E('Wrong email or password');if(acc.pw!==p)putAcc(id,{...acc,pw:p});enter(acc.name,m)}};
 $('#eye').onclick=()=>{const q=$('#p');q.type=q.type==='password'?'text':'password';$('#eye').textContent=q.type==='password'?'👁':'🙈'};$('#g').onclick=go;$('#p').onkeydown=e=>{if(e.key==='Enter')go()};$('#sw').onclick=e=>{e.preventDefault();SFX.click();login(!up)}}
-async function home(){const del=await getDel();const qs=QUIZZES.filter(q=>!del.includes(q.id));
-app.innerHTML=(delMode?`<div class="card" style="margin-bottom:12px;display:flex;justify-content:space-between;align-items:center"><span>Press ✕ to remove a quiz</span><button class="go" id="dn" style="padding:8px 22px">Done</button></div>`:'')+`<div class="list">${qs.map(q=>`<div class="card q" data-id="${q.id}"><h3>${q.title}</h3><small>${q.qs.length} questions</small>${delMode?`<button class="x" data-x="${q.id}">✕</button>`:''}</div>`).join('')||'<div class="card">No quizzes available.</div>'}</div>`;
+const qn=q=>'Quiz '+(QUIZZES.indexOf(q)+1);
+const tOpen=q=>q.opens?Date.parse(q.opens):0,tClose=q=>q.closes?Date.parse(q.closes):Infinity,isClosed=q=>!!q.closed||Date.now()>=tClose(q);
+async function home(){const del=await getDel();const qs=QUIZZES.filter(q=>(q.closed||!del.includes(q.id))&&Date.now()>=tOpen(q));
+app.innerHTML=(delMode?`<div class="card" style="margin-bottom:12px;display:flex;justify-content:space-between;align-items:center"><span>Press ✕ to remove a quiz</span><button class="go" id="dn" style="padding:8px 22px">Done</button></div>`:'')+`<div class="list">${qs.map(q=>`<div class="card q" data-id="${q.id}"><h3>${qn(q)}</h3><small>${q.qs.length} questions${isClosed(q)?' · Closed':(q.closes?` · closes in <span class="cd" data-t="${tClose(q)}"></span>`:'')}</small>${delMode&&!q.closed?`<button class="x" data-x="${q.id}">✕</button>`:''}</div>`).join('')||'<div class="card">No quizzes available.</div>'}</div>`;
 app.querySelectorAll('.q').forEach(c=>c.onclick=e=>{if(e.target.dataset.x)return;SFX.click();play(c.dataset.id)});
 app.querySelectorAll('[data-x]').forEach(b=>b.onclick=async()=>{SFX.no();const c=b.closest('.q');c.style.transition='.3s';c.style.opacity=0;c.style.transform='scale(.9)';await putDel([...del,b.dataset.x]);setTimeout(home,300)});
 if(delMode)$('#dn').onclick=()=>{SFX.ok();delMode=false;trash()}}
-async function trash(){const del=await getDel();const qs=QUIZZES.filter(q=>del.includes(q.id));
-app.innerHTML=`<div class="card"><h2 style="margin-top:0">Deleted quizzes</h2>${qs.map(q=>`<div style="display:flex;justify-content:space-between;align-items:center;margin:10px 0"><span>${q.title}</span><button class="ghost" data-r="${q.id}">Restore</button></div>`).join('')||'<div style="opacity:.7;margin:10px 0">Nothing deleted.</div>'}<button class="go" id="bk" style="width:100%;margin-top:8px">Back to quizzes</button></div>`;
+async function trash(){const del=await getDel();const qs=QUIZZES.filter(q=>del.includes(q.id)&&!q.closed);
+app.innerHTML=`<div class="card"><h2 style="margin-top:0">Deleted quizzes</h2>${qs.map(q=>`<div style="display:flex;justify-content:space-between;align-items:center;margin:10px 0"><span>${qn(q)}</span><button class="ghost" data-r="${q.id}">Restore</button></div>`).join('')||'<div style="opacity:.7;margin:10px 0">Nothing deleted.</div>'}<button class="go" id="bk" style="width:100%;margin-top:8px">Back to quizzes</button></div>`;
 app.querySelectorAll('[data-r]').forEach(b=>b.onclick=async()=>{SFX.ok();await putDel(del.filter(x=>x!==b.dataset.r));trash()});$('#bk').onclick=()=>{SFX.click();home()}}
-function scoreView(qz,r,msg){app.innerHTML=`<div class="card" style="text-align:center"><h2>${qz.title}</h2><div>${msg}</div><div class="big">${r.ok} / ${qz.qs.length}</div><div style="opacity:.7;margin-bottom:14px">You can't retake this quiz.</div><button class="go" id="b" style="padding:11px 28px">Back to quizzes</button></div>`;$('#b').onclick=()=>{SFX.click();home()}}
+function scoreView(qz,r,msg){app.innerHTML=`<div class="card" style="text-align:center"><h2>${qn(qz)}</h2><div>${msg}</div><div class="big">${r.ok} / ${qz.qs.length}</div><div style="opacity:.7;margin-bottom:14px">You can't retake this quiz.</div><button class="go" id="b" style="padding:11px 28px">Back to quizzes</button></div>`;$('#b').onclick=()=>{SFX.click();home()}}
 async function play(id){const qz=QUIZZES.find(q=>q.id===id),rid=key(id,em);
 const old=(await getRes()).find(x=>x.id===rid);if(old){SFX.click();return scoreView(qz,old,'Your score')}
+if(isClosed(qz)){SFX.no();app.innerHTML=`<div class="card" style="text-align:center"><h2>${qn(qz)}</h2><div style="margin:14px 0">This quiz is closed.</div><button class="go" id="b" style="padding:11px 28px">Back to quizzes</button></div>`;$('#b').onclick=()=>{SFX.click();home()};return}
 let i=0,ok=0,bad=0,pr=Promise.resolve();
 const sv=done=>{pr=pr.then(()=>putRes({id:rid,quiz:id,user:me,ok,bad,total:qz.qs.length,done,t:Date.now()}))};
 sv(false);await pr;
-const show=()=>{const q=qz.qs[i];app.innerHTML=`<div class="card"><div class="bar"><i style="width:${i/qz.qs.length*100}%"></i></div><small>${qz.title} · ${i+1}/${qz.qs.length}</small><h2 dir="auto">${q.q}</h2><div class="opts">${q.o.map((t,k)=>`<button class="opt" dir="auto" data-k="${k}">${t}</button>`).join('')}</div></div>`;
+const show=()=>{const q=qz.qs[i];app.innerHTML=`<div class="card"><div class="bar"><i style="width:${i/qz.qs.length*100}%"></i></div><small>${qn(qz)} · ${i+1}/${qz.qs.length}</small><h2 dir="auto">${q.q}</h2><div class="opts">${q.o.map((t,k)=>`<button class="opt" dir="auto" data-k="${k}">${t}</button>`).join('')}</div></div>`;
 app.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const k=+b.dataset.k;app.querySelectorAll('.opt').forEach(x=>x.disabled=true);
 app.querySelector(`[data-k="${q.a}"]`).classList.add('ok');if(k===q.a){ok++;SFX.ok()}else{bad++;b.classList.add('no');SFX.no()}
 sv(false);setTimeout(()=>{i++;i<qz.qs.length?show():fin()},1300)})};
@@ -124,7 +135,7 @@ async function getAccs(){if(db)try{return(await db.collection('accounts').get())
 async function removeAcc(a,rs){await delDoc('accounts/'+hid(a.email));const m=L('accounts')||{};delete m[hid(a.email)];S('accounts',m);
 const mine=rs.filter(x=>x.id===key(x.quiz,a.email));for(const x of mine)await delDoc('results/'+x.id);S('results',(L('results')||[]).filter(x=>x.id!==key(x.quiz,a.email)))}
 async function showAccs(){const[as,rs]=await Promise.all([getAccs(),getRes()]);if(!as.length)return print('No accounts.');print('\n== Accounts ==');
-as.forEach(a=>{const sc=QUIZZES.map(q=>{const r=rs.find(x=>x.id===key(q.id,a.email));return r?`${q.title}: ${r.ok}/${q.qs.length}`:null}).filter(Boolean).join(', ')||'no score';
+as.forEach(a=>{const sc=QUIZZES.map(q=>{const r=rs.find(x=>x.id===key(q.id,a.email));return r?`${qn(q)}: ${r.ok}/${q.qs.length}`:null}).filter(Boolean).join(', ')||'no score';
 const row=document.createElement('div');row.style.cssText='display:flex;align-items:center;gap:8px;margin:4px 0';
 const t=document.createElement('span');t.style.flex='1';t.dir='auto';t.textContent=`${a.name} | ${a.email} | ${a.pw||'(not saved yet)'} - ${sc}`;
 const b=document.createElement('button');b.textContent='✕';b.title='Delete account';b.style.cssText='background:#c0392b;color:#fff;border:0;border-radius:6px;width:28px;height:28px;cursor:pointer';
@@ -133,9 +144,11 @@ b.onclick=async()=>{SFX.no();await removeAcc(a,rs);row.remove()};row.append(t,b)
 const medal=['🥇','🥈','🥉'];
 cmd.onkeydown=async e=>{if(e.key!=='Enter')return;const c=cmd.value.trim().toLowerCase();cmd.value='';if(!c)return;print('> '+c);SFX.cmd();
 const[w0,w1]=c.split(/\s+/),k=w0.replace(/^ال/,'');if(['grades','scores','درجات','درجه','درجة','نتايج','نتائج'].includes(k)){const r=await getRes();if(!r.length)return print('No results yet.');
-for(const q of QUIZZES){const rs=r.filter(x=>x.quiz===q.id).sort((a,b)=>b.ok-a.ok||a.t-b.t);if(!rs.length)continue;print(`\n== ${q.title} ==`);rs.forEach((x,i)=>print(`${medal[i]||(i+1)+'.'} ${x.user}  ✔ ${x.ok} correct  ✘ ${x.bad} wrong${x.done===false?' (left early)':''}`))}}
+for(const q of QUIZZES){const rs=r.filter(x=>x.quiz===q.id).sort((a,b)=>b.ok-a.ok||a.t-b.t);if(!rs.length)continue;print(`\n== ${qn(q)} ==`);rs.forEach((x,i)=>print(`${medal[i]||(i+1)+'.'} ${x.user}  ✔ ${x.ok} correct  ✘ ${x.bad} wrong${x.done===false?' (left early)':''}`))}}
 else if(['del','delete','مسح','حذف','امسح','احذف'].includes(k)){if(!me)return print('Sign in first.');if(['a','acc','accs','account','accounts','ا','حساب','حسابات','الحسابات','اكونتات','الاكونتات'].includes(w1))return showAccs();delMode=true;print('Delete mode ON.');closeTerm();home()}
 else print('command not found')};
+let sig='';setInterval(()=>{const n=QUIZZES.map(q=>(Date.now()>=tOpen(q))+'/'+isClosed(q)).join();if(sig&&n!==sig&&me&&$('.list')&&!delMode)home();sig=n;
+document.querySelectorAll('.cd').forEach(e=>{const s=Math.max(0,Math.floor((+e.dataset.t-Date.now())/1000));e.textContent=Math.floor(s/3600)+':'+String(Math.floor(s%3600/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')})},1000);
 /* boot */
 (async()=>{app.innerHTML='<div class="card" style="text-align:center;margin-top:12vh">Connecting…</div>';try{const pr=window.claude&&window.claude.use?window.claude.use('db'):null;if(pr)db=await pr}catch(e){}
 $('#st').textContent=db?'● database connected':'● local only';
